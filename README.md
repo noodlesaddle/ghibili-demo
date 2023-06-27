@@ -31,7 +31,3 @@ Install frontend dependencies using PNPM or NPM
   - **PNPM**: `pnpm run build:production`
   - **NPM**: `npm run build:production`<br/>It will use .env and .env.production files to create build.
 
-# REMINDER
-
-- **Don't forget** to change the project name in package.json
-- **Don't push** to this repo with your own code
