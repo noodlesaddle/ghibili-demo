@@ -1,0 +1,62 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white !important;
+
+  font-family: 'Noto Sans JP', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'メイリオ',
+    Meiryo, 'ＭＳ ゴシック', 'MS Gothic', HiraKakuProN-W3, 'TakaoExゴシック', TakaoExGothic,
+    'MotoyaLCedar', 'Droid Sans Japanese', sans-serif;
+}
+
+img {
+  image-rendering: -webkit-optimize-contrast !important;
+}
+
+textarea {
+  @apply resize-none;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::after {
+  @apply inline-block;
+  @apply ml-2;
+  @apply text-white;
+  @apply text-xs;
+  content: '必須';
+  background-color: #ff4d4f;
+  @apply p-1;
+  @apply rounded;
+  @apply leading-none;
+}
+.ant-pagination .ant-pagination-item a {
+  display: block;
+  padding: 0 6px;
+  color: whitesmoke;
+  transition: none;
+}
+#nprogress .bar {
+  background: theme('colors.primary');
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px theme('colors.primary'), 0 0 5px theme('colors.primary');
+}
+
+.custom-cursor {
+  cursor: none;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px; /* Adjust the width and height based on your cursor image */
+  height: 32px;
+  background-image: url('/cursor.png'); /* Use the correct path to your custom cursor image */
+  background-size: cover;
+  z-index: 9999;
+}
