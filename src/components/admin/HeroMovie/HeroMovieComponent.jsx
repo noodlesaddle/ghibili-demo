@@ -17,7 +17,7 @@ export const HeroTitle = styled.h1`
 `
 export const HeroDescription = styled.p`
   width: 45rem;
-  max-width: 80vw;
+  max-width: 60vw;
   line-height: 1.3;
 `
 
@@ -35,20 +35,20 @@ const HeroMovieComponent = (props) => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className='mb-8'
+          className='mb-8 '
         >
           <HeroContainer
             background={randomMovie?.movie_banner}
             className='p-10 '
             variants={CONSTANT.ANIMATION_VARIANT_STAGGER_CONTAINER}
           >
-            <HeroTitle className='text-6xl font-bold mb-6 text-white'>
+            <HeroTitle className='md:text-6xl text-2xl font-bold mb-6 text-white'>
               {randomMovie?.title}
             </HeroTitle>
-            <HeroDescription className='font-medium text-md mb-4'>
+            <HeroDescription className='font-medium hidden lg:flex text-md mb-4'>
               {randomMovie?.description}
             </HeroDescription>
-            <div className='flex justify-start mt-6 uppercase text-xs'>
+            <div className='md:flex justify-start mt-6 uppercase text-xs hidden '>
               <Button type='primary' icon={<PlayCircleOutlined />} className='mr-6 uppercase'>
                 <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'>
                   watch / 映画を観る

@@ -83,7 +83,7 @@ const ListMoviesComponent = (props) => {
                     }
                   />
                   <div className='mt-4 w-full'>
-                    <Button className='w-full mb-4' size='small' ghost>
+                    <Button className='w-full mb-4 hidden lg:block' size='small' ghost>
                       <p className='uppercase text-xs'>
                         {!isMobile ? 'film details / 映画の詳細' : 'details'}
                       </p>

@@ -145,9 +145,6 @@
 .ml-2 {
   margin-left: 0.5rem !important;
 }
-.mr-4 {
-  margin-right: 1rem !important;
-}
 .mr-6 {
   margin-right: 1.5rem !important;
 }
@@ -213,12 +210,6 @@
 .flex-col {
   flex-direction: column !important;
 }
-.flex-wrap {
-  flex-wrap: wrap !important;
-}
-.items-center {
-  align-items: center !important;
-}
 .justify-start {
   justify-content: flex-start !important;
 }
@@ -227,12 +218,6 @@
 }
 .justify-center {
   justify-content: center !important;
-}
-.justify-between {
-  justify-content: space-between !important;
-}
-.gap-y-4 {
-  row-gap: 1rem !important;
 }
 .overflow-x-auto {
   overflow-x: auto !important;
@@ -311,14 +296,6 @@
 .text-4xl {
   font-size: 2.25rem !important;
   line-height: 2.5rem !important;
-}
-.text-6xl {
-  font-size: 3.75rem !important;
-  line-height: 1 !important;
-}
-.text-lg {
-  font-size: 1.125rem !important;
-  line-height: 1.75rem !important;
 }
 .text-sm {
   font-size: 0.875rem !important;
@@ -676,7 +653,7 @@ p {
   left: 0;
   width: 32px; /* Adjust the width and height based on your cursor image */
   height: 32px;
-  background-image: url('public/cursor.png'); /* Use the correct path to your custom cursor image */
+  background-image: url('/cursor.png'); /* Use the correct path to your custom cursor image */
   background-size: cover;
   z-index: 9999;
 }
@@ -697,12 +674,25 @@ p {
   }
 }
 @media (min-width: 768px) {
+  .md\:flex {
+    display: flex !important;
+  }
+  .md\:text-6xl {
+    font-size: 3.75rem !important;
+    line-height: 1 !important;
+  }
   .md\:text-sm {
     font-size: 0.875rem !important;
     line-height: 1.25rem !important;
   }
 }
 @media (min-width: 1024px) {
+  .lg\:block {
+    display: block !important;
+  }
+  .lg\:flex {
+    display: flex !important;
+  }
   .lg\:w-1\/5 {
     width: 20% !important;
   }
