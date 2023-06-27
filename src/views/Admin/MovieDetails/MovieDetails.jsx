@@ -130,8 +130,8 @@ const MovieDetails = () => {
                 {movieDetail.original_title_romanised} / {movieDetail.original_title}
               </p>
               <p className='text-primary  text-xs mt-1'>
-                Year: {movieDetail.release_date} / Director: {movieDetail.director} / Runtime :
-                {movieDetail.running_time}
+                Year: {movieDetail.release_date} / Director: {movieDetail.director} / Producer:
+                {movieDetail.producer} / Runtime :{movieDetail.running_time}
                 mins
               </p>
             </div>
