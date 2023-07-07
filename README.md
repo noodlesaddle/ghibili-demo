@@ -27,7 +27,4 @@ Install frontend dependencies using PNPM or NPM
 - To create a build for staging environment (Pre-production):
   - **PNPM**: `pnpm run build:staging`
   - **NPM**: `npm run build:staging`<br/>It will use .env and .env.staging files to create build.
-- To create a build for production environment:
-  - **PNPM**: `pnpm run build:production`
-  - **NPM**: `npm run build:production`<br/>It will use .env and .env.production files to create build.
 
