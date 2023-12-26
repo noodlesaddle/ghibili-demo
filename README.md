@@ -6,7 +6,6 @@ Install frontend dependencies using PNPM or NPM
 - **NPM**: `npm install`
 
 # ENV download
-
 # Development
 
 - To run the project for development:
